@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'B612', sans-serif;
+    color: #fff;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url(../images/fundo.svg);
+}
+.principal{
+    width: 850px;
+    max-width: 100vw;
+    margin: auto;
+}
+.principal-top{
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+}
+.principal-top p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.principal-bottom{
+    display: flex;
+    margin-top: 100px;
+}
+.bottom-capa{
+    margin-right: 50px;
+}
+.bottom-capa img{
+    height: 100%;
+}
+.bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.fa-star path{
+    color: #ffa800;
+}
+.empty path{
+    color: #ccc;
+}
+.buttons button{
+    border-radius: 2px;
+    cursor: pointer;
+}
+.assistir{
+    background-color: #0072d2;
+    border: none;
+    padding: 10px 15px;
+}
+.assistir:hover{
+    background-color: #0059a1;
+}
+.trailer{
+    background-color: #131318;
+    border: 1px solid #fff;
+    padding: 9px 15px;
+}
+.trailer:hover{
+    background-color: #0a0a0c;
+}

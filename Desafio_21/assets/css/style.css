@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #000;
+}
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9BF00B;
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+.container{
+    width: 1040px;
+    max-width: 100%;
+    margin: auto;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.logo img{
+    width: 80px;
+}
+.menu {
+    display: flex;
+    transition: ease-out 400ms;
+}
+.menu li{
+    list-style-type: none;
+    color: #fff;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+.menu li:hover{
+    color: #a0a0a0;
+    cursor: pointer;
+}
+.menu-toggle{
+    display: none;
+}
+.menu-sandwich{
+    width: 30px;
+    height: 3px;
+    background-color: #9BF00B;
+}
+.menu-sandwich:nth-child(2){
+    margin: 8px 0;
+}
+.disponibilidade{
+    padding: 15px;
+    background-color: #9BF00B;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.disponibilidade:hover{
+    background-color: #6caa00;
+    cursor: pointer;
+}
+.intro{
+    background: radial-gradient(#6caa00, .03%, #000);
+    overflow: hidden;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    color: #fff;
+    font-size: 42px;
+    margin: 100px 0 20px 0;
+}
+.banner p{
+    color: #9BF00B;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.banner img{    
+    width: 100%
+}
+.controle{
+    display: flex;
+    margin: 100px auto;
+    color: #fff;
+}
+.controle-left{
+    flex: 1;
+    padding: 0 0 0 10px;
+}
+.controle-left h1{
+    font-size: 42px;
+}
+.controle-left span{
+    color: #9BF00B;
+}
+.controle-left p{
+    margin-top: 20px;
+    color: #c0c0c0;
+}
+.controle-right{
+    flex: 1;
+    text-align: center;
+}
+.controle-right img{
+    width: 250px;
+}
+.posters{
+    width: 100vw;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: auto;
+}
+.img-poster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+.img-poster img:first-child{
+    border: 1px solid #9BF00B;
+    margin-right: 5px;
+    max-height: 95vh;
+}
+.faq{
+    margin: 100px auto;
+    color: #fff;
+}
+.faq h2 span{
+    color: #9BF00B;
+}
+.box-pergunta{
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #777;
+    overflow: hidden;
+    height: 45px;
+}
+.accordion {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: transparent;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 25px;
+    background-color: transparent;
+    display: none;
+    overflow: hidden;
+    transition: ease-out 400ms;
+    margin-bottom: 10px;
+}
+.panel p{
+    color: #a0a0a0;
+    font-size: 14px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+}
+.footer-copy{
+    display: flex;
+    align-items: center;
+}
+.footer-copy h4{
+    font-weight: normal;    
+    color: #777;
+    font-size: 14px;
+}
+.footer-copy h4:nth-child(1){
+    margin-right: 50px;
+}
+
+/* CLASSES ACTIVE */
+
+.active-box{
+    height: 84px !important;
+}
+.menu-active{
+    opacity: 1 !important;
+    top: 66px !important;
+}
+
+@media screen and (max-width: 670px){
+    .menu {
+        flex-direction: column;
+        background-color: rgba(0,0,0,.5);
+        top: -200px;
+        right: 0px;
+        position: absolute;
+        opacity: 0;
+    }
+    .menu li{
+        margin: 15px 20px;
+    }
+    
+    .menu-toggle{
+        display: block;
+    }
+    .controle{
+        flex-wrap: wrap;
+    }
+    .controle-left{
+        text-align: center;
+    }
+    .controle-right{
+        order: -1;
+    }
+}

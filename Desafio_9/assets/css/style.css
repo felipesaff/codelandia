@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: #171717;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container {
+    width: 90vw;
+    max-width: 1100px;
+}
+.container .menu {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container h1 {
+    font-size: 25px;
+}
+.container h1,
+nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out 400ms;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a {
+    margin: 0 40px;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #828282;
+}
+.menu-toggle {
+    color: #6610f2;
+    display: none;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.banner .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.banner-left {
+    width: 400px;
+}
+.banner-left p {
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+}
+.banner-left p:nth-child(2) {
+    color: #6610f2;
+}
+.banner-left h3 {
+    color: #828282;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 17px;
+}
+.banner-botoes button {
+    padding: 10px 0px;
+    width: 150px;
+    font-size: 13px;
+}
+.banner-botoes .btn-1 {
+    background-color: #6610f2;
+    border: 0;
+    color: #101010;
+}
+.banner-botoes .btn-1:hover {
+    background-color: #4b0bb3;
+    cursor: pointer;
+}
+.banner-botoes .btn-2 {
+    background-color: transparent;
+    border: 1px solid #828282;
+    color: #f9f9f9;
+}
+.banner-botoes .btn-2:hover {
+    cursor: pointer;
+    color: #828282;
+}
+.banner-botoes button {
+    width: 150px;
+}
+.banner-right img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 125px;
+    box-shadow: 0.3em 0 0.5em #6610f2;
+}
+.sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.sobre .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre p {
+    max-width: 600px;
+    line-height: 35px;
+    color: #828282;
+    text-align: center;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+}
+.contato .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contato-card {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 180px;
+}
+.contato-card i {
+    width: 50px;
+    height: 50px;
+    color: #6610f2;
+    text-align: center;
+}
+.contato-card i:hover {
+    color: #4b0bb3;
+    cursor: pointer;
+}
+.contato-card .titulo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #f9f9f9;
+    margin-top: 15px;
+}
+.contato-card .subtitulo {
+    font-weight: normal;
+    font-size: 14px;
+    color: #828282;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.galeria .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projeto-card,
+.servico-card {
+    background-color: #212121;
+    width: 280px;
+    padding: 15px;
+    margin: 30px 20px;
+    border: 1px solid #333;
+}
+.projeto-card img {
+    width: 250px;
+}
+.projeto-card h2{
+    color: #f9f9f9;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.projeto-card h3 {
+    color: #828282;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.servicos {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.servicos .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicos-galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.servico-card {
+    border-bottom: 3px solid #6610f2;
+}
+.servico-card i {
+    color:  #6610f2;
+    margin-bottom: 35px;
+}
+.servico-card h2 {
+    color: #828282;
+    font-weight: normal;
+}
+.skills {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-galeria {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    width: 120px;
+    height: 120px;
+    margin: 30px 20px;
+    border: 1px solid #333;
+}
+.skill-card i {
+    color: #6610f2;
+}
+.skill-card p {
+    color: #828282;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #212121;
+    color: #f9f9f9;
+    font-size: 16px;
+}
+footer a {
+    color: #712edf;
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 772px) { 
+
+    .menu-toggle{
+        display: block;
+    }
+    .menu nav {
+        display: none;
+    }
+    .menu nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(102, 16, 242, .5);
+        position: absolute;
+        z-index: 99;
+        width: 50vw;
+        top: 90px;
+        right: 0;
+        border-radius: 5px;
+    }
+    .menu nav ul li  {
+        margin: 15px 0;
+    }
+    .banner .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .container .banner-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .container .banner-right {
+        margin-bottom: 30px;
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .menu i {
+        display: block;
+    }
+    .menu nav {
+        display: none;
+    }
+    .menu nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(102, 16, 242, .5);
+        position: absolute;
+        z-index: 99;
+        max-width: 50vw;
+        margin-top: 35px;
+        border-radius: 5px;
+    }
+    .menu nav ul li  {
+        margin: 15px 0;
+    }
+    .menu nav ul li a {        
+        font-size: 10px;
+    }
+}
